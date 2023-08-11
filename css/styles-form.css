@@ -1,7 +1,8 @@
 .form-order-service {
   font-family: inherit;
   color: inherit;
-  background-color: #f4f4fd;
+  background-color: #FCFCFC;
+  
   width: 408px;
   height: 584px;
   flex-shrink: 0;
@@ -19,15 +20,31 @@
 }
 
 /* Close button */
-.icon-close-form {
-  padding-right: 0;
-  padding-left: 342px;
-  padding-top: 0;
-  padding-bottom: auto;
-  border-radius: 50%;
+.close-button {
+  display: inline-flex;
+  align-items: center;    
   width: 24px;
   height: 24px;
+  border-radius: 50%; 
+  background-color: #E7E9FC; /*fill: var(--cornflower, #E7E9FC);*/
+  border: 1px solid rgba(46, 47, 66, 0.4); 
+  margin-left: auto;
   flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.close-icon {
+  color: wight;
+  fill: white;
+}
+
+.close-icon:hover {
+  fill: blue;
+}
+
+.close-button:hover {
+  background-color: blue; 
+  
 }
 
 .form-text {
@@ -76,8 +93,7 @@
   background-color: white;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  gap: 10px;
-  fill: red; 
+  gap: 10px;  
 }
 
 /* Link Text */
