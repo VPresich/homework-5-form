@@ -24,109 +24,240 @@
   </head>
 
   <body>
-    <form class="form-order-service" id="order-service">
-      <div class="form-container">
-        <!-- Close button -->        
-        <button class="close-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" >
-            <g clip-path="url(#clip0_297024_952)">
-            <path d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_297024_952">
-            <rect width="8" height="8" />
-            </clipPath>
-            </defs>
-            </svg>
-         
-          <!-- <svg class="close-icon" width="8" height="8">
-            <use href="./images/icons.svg#close-form"></use>
-          </svg> -->
-       
-        </button>
-        <!-- Text invitation -->
-        <label class="form-text"
-          >Leave your contacts and we will call you back</label
-        >
+    <!-- Header -->
+    <header class="header-page">
+      <div class="container">
+        <!-- Navigation -->
+        <nav class="navigation">
+          <a href="./index.html" class="header-logo"
+            >Web<span class="header-logo-accent">Studio</span></a
+          >
+          <!-- Menu -->
+          <ul class="menu">
+            <li>
+              <a href="./index.html" class="menu-item-link">Studio</a>
+            </li>
+            <li>
+              <a href="" class="menu-item-link">Portfolio</a>
+            </li>
+            <li>
+              <a href="" class="menu-item-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-        <!-- Input fields group -->
-        <fieldset class="input-fields-set">
-          <div>
-            <label class="input-label" for="user-name">Name</label>
-            <div class="input-container">
-              <svg class="input-icon" width="18" height="18">
-                <use href="./images/icons.svg#person-default"></use>
-              </svg>
-              <input
-                class="input-text"
-                id="user-name"
-                name="user-name"
-                type="text"
-              />
-            </div>
-          </div>
-          <div>
-            <label class="input-label" for="user-phone">Phone</label>
-            <div class="input-container">
-              <svg class="input-icon" width="18" height="24">
-                <use href="./images/icons.svg#phone"></use>
-              </svg>
-              <input
-                class="input-text"
-                id="user-phone"
-                name="user-phone"
-                type="text"
-              />
-            </div>
-          </div>
-          <div>
-            <label class="input-label" for="user-email">Email</label>
-            <div class="input-container">
-              <svg class="input-icon" width="18" height="24">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              <input
-                class="input-text"
-                id="user-email"
-                name="user-email"
-                type="text"
-              />
-            </div>
-          </div>
-
-          <label class="input-label">
-            Comment
-            <textarea
-              class="form-textarea"
-              name="comment"
-              rows="5"
-              placeholder="Text input"
-            ></textarea>
-          </label>
-        </fieldset>
-
-        <!-- Check box -->
-        <div class="checkbox-container">
-          <label class="checkbox-label" for="user-accept">  
-          <input
-            class="checkbox-real"
-            type="checkbox"
-            id="user-accept"
-            name="user-accept"
-            required
-          />
-          <span class="checkbox-custom">
-            <svg class="checkbox-custom-icon" width="16" height="16">
-              <use href="./images/icons.svg#clik-checkbox"></use>
-            </svg>
-          </span>  
-          I accept the terms and conditions of the 
-            <a class="input-link" href="">Privacy Policy</a>
-          </label> 
+        <!-- Contacts -->
+        <address class="contacts">
+          <ul class="contacts-container">
+            <li>
+              <a href="mailto:info@devstudio.com" class="contact-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="contact-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <main>
+      <section class="section-test">
+        <div class="container">
+          <button type="button" class="button-test">Button test</button>
         </div>
 
-        <button class="button-order" type="submit">Send</button>
+        <form class="form-order-service" id="id-order-service">
+          <div class="form-container">
+            <!-- Form header -->
+            <div class="form-header">
+              <div class="form-title"></div>
+              <!-- Close button -->
+              <button class="close-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                >
+                  <g clip-path="url(#clip0_297024_952)">
+                    <path
+                      d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_297024_952">
+                      <rect width="8" height="8" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <!-- <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-form"></use>
+          </svg> -->
+              </button>
+            </div>
+
+            <!-- Form controls -->
+            <div class="form-controls">
+              <!-- Text invitation -->
+              <label class="form-text"
+                >Leave your contacts and we will call you back</label
+              >
+
+              <!-- Input fields group -->
+              <fieldset class="input-fields-set">
+                <div>
+                  <label class="input-label" for="user-name">Name</label>
+                  <div class="input-custom">
+                    <svg class="input-icon" width="18" height="18" fill="none">
+                      <use href="./images/icons.svg#person-default"></use>
+                    </svg>
+                    <input
+                      class="input-real"
+                      id="user-name"
+                      name="user-name"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label class="input-label" for="user-phone">Phone</label>
+                  <div class="input-custom">
+                    <svg class="input-icon" width="18" height="24">
+                      <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                    <input
+                      class="input-real"
+                      id="user-phone"
+                      name="user-phone"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label class="input-label" for="user-email">Email</label>
+                  <div class="input-custom">
+                    <svg class="input-icon" width="18" height="24">
+                      <use href="./images/icons.svg#envelope"></use>
+                    </svg>
+                    <input
+                      class="input-real"
+                      id="user-email"
+                      name="user-email"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <!-- Multy text -->
+                <label class="input-label">
+                  Comment
+                  <textarea
+                    class="form-textarea"
+                    name="comment"
+                    rows="5"
+                    placeholder="Text input"
+                  ></textarea>
+                </label>
+              </fieldset>
+
+              <!-- Check box -->
+              <div class="checkbox-container">
+                <label class="checkbox-label" for="user-accept">
+                  <input
+                    class="checkbox-real"
+                    type="checkbox"
+                    id="user-accept"
+                    name="user-accept"
+                    required
+                  />
+                  <span class="checkbox-custom">
+                    <svg class="checkbox-custom-icon" width="16" height="16">
+                      <use href="./images/icons.svg#clik-checkbox"></use>
+                    </svg>
+                  </span>
+                  I accept the terms and conditions of the
+                  <a class="input-link" href="">Privacy Policy</a>
+                </label>
+              </div>
+
+              <!-- Button -->
+              <button class="button-order" type="submit">Send</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-page">
+      <div class="container">
+        <div class="section-copyright">
+          <!-- Logo      -->
+          <a href="./index.html" class="footer-logo"
+            >Web<span class="footer-logo-accent">Studio</span></a
+          >
+          <!-- Footer text -->
+          <p class="footer-copyright-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+        <div class="social-media">
+          <h4 class="social-media-text">Social media</h4>
+          <ul class="footer-social-links">
+            <!-- Iinstagram icon -->
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="social-link"
+              >
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- Twitter icon -->
+            <li>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                class="social-link"
+              >
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- Facebook icon -->
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="social-link"
+              >
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- LinkedId icon -->
+            <li>
+              <a
+                href="https://www.linkedid.com/"
+                target="_blank"
+                class="social-link"
+              >
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#linkedid"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </form>
+    </footer>
   </body>
 </html>

@@ -163,7 +163,7 @@ img {
   background-position: cеnter;
   background-repeat: no-repeat;
   margin: 0px;
-  padding: 188px 0px;
+  /* padding: 188px 0px; */
 }
 
 .section-about .container {
@@ -175,6 +175,7 @@ img {
 }
 
 .section-about-header {
+  padding-top: 188px;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -203,6 +204,7 @@ img {
   min-width: 169px;
   height: 56px;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 188px;
 }
 
 .button-order:hover,
@@ -472,7 +474,7 @@ img {
   margin: 0;
 }
 
-/* For overlay */
+/* For portfolio overlay */
 .portfolio-overlay-card {
   position: relative;
   display: block;
@@ -504,4 +506,30 @@ img {
 
 .portfolio-overlay-card:hover .portfolio-overlay {
   transform: translateX(0);
+}
+
+/* For form overlay */
+.section-about-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 408px;
+  height: 600px;
+  /* flex-shrink: 0;
+  background-color: #fcfcfc; */
+  background-color: red;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid;
+  overflow: hidden;
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  /* transition: transform 250ms ease-in-out; */
+}
+
+.button-order:active .section-about-overlay {
+  opacity: 1;
+  /* transform: translateX(0); */
 }
