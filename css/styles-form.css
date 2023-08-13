@@ -121,6 +121,11 @@
   text-decoration-line: underline;
   transition: color 150ms ease-in-out;
 }
+
+.input-link:focus {
+  border: 1px solid #4d5ae5;
+}
+
 .input-icon {
   fill: #2e2f42;
 }
@@ -194,7 +199,8 @@
   height: 18px;
   flex-shrink: 0;
   background-color: white;
-  transition: color 150ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4); /* var(--navyblue-modal, rgba(46, 47, 66, 0.40)); */
   margin-right: 10px;
 }
@@ -234,7 +240,9 @@
   height: 56px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
+.checkbox-real:focus + .checkbox-custom {
+  border: 1px solid #4d5ae5;
+}
 .checkbox-real:checked + .checkbox-custom {
   background-color: #404bbf;
   fill: #f7f4fd;
